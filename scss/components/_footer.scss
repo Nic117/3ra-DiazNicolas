@@ -1,0 +1,51 @@
+@import './colors';
+@import './variables'; 
+
+footer {
+	background: #212529;
+	padding: 86px 0;
+}
+
+.single-content {
+	text-align: center;
+	padding: 115px 0;
+}
+
+.single-box {
+	p {
+		color: $color_4;
+		line-height: 1.9;
+	}
+	h3 {
+		font-size: 16px;
+		font-weight: 700;
+		color: $color_4;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		li {
+			a {
+				text-decoration: none;
+				color: $color_4;
+				line-height: 2.5;
+				font-weight: 100;
+			}
+		}
+	}
+	h2 {
+		color: $color_4;
+		font-size: 20px;
+		font-weight: 700;
+	}
+}
+#basic-addon2 {
+	background: #555253;
+	color: $color_4;
+}
+.socials {
+	i {
+		font-size: 30px;
+		margin-right: 25px;
+	}
+}

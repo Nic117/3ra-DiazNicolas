@@ -1,0 +1,108 @@
+@import './colors';
+@import './variables'; 
+
+
+::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: #{$border};
+}
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: #{$border};
+}
+#registro {
+	font-family: $font-family_3;
+	background: #d35920;
+	background: -webkit-linear-gradient(to right, #e08551, #be4646);
+	background: linear-gradient(to right, #d6b139, #c5623b);
+	height: 650px;
+	@extend %flexbox;
+    
+}
+#h1reg {
+	text-align: center;
+	font-weight: 700;
+}
+form {
+	background: #fff;
+	padding: 40px 0;
+	box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+	border-radius: 10px;
+	.grupo {
+		position: relative;
+		margin: 45px;
+	}
+}
+.form {
+	width: 100%;
+	margin: auto;
+}
+input {
+	background: none;
+	color: $color_7;
+	font-size: 18px;
+	padding: 10px 10px 10px 5px;
+	display: block;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid var(--colorTextos);
+	&:focus {
+		outline: none;
+		color: $color_8;
+	}
+	&:focus~label {
+		top: -14px;
+		font-size: 12px;
+		color: $color_10;
+	}
+	&:valid~label {
+		top: -14px;
+		font-size: 12px;
+		color: $color_10;
+	}
+	&:focus~.barra {
+		&::before {
+			width: 100%;
+		}
+	}
+}
+label {
+	color: $color_9;
+	font-size: 16px;
+	position: absolute;
+	left: 5px;
+	top: 10px;
+	transition: 0.5s ease all;
+	pointer-events: none;
+}
+.barra {
+	position: relative;
+	display: block;
+	width: 100%;
+	&::before {
+		content: "";
+		height: 2px;
+		width: 0%;
+		bottom: 0;
+		position: absolute;
+		background: linear-gradient(to right, #ca8121, #dd5d37);
+		transition: 0.3s ease width;
+		left: 0;
+	}
+}
+#buttonreg {
+	font-family: $font-family_3;
+	background: #4568DC;
+	background: -webkit-linear-gradient(to right, #da3e17, #e23112);
+	background: linear-gradient(to right, #e2b949, #dc8e45);
+	border: none;
+	display: block;
+	width: 80%;
+	margin: 10px auto;
+	color: $color_4;
+	height: 40px;
+	font-size: 16px;
+	cursor: pointer;
+}

@@ -1,0 +1,124 @@
+@import './colors';
+@import './variables'; 
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	width: 90%;
+	max-width: 1100px;
+	height: 100%;
+	margin: auto;
+	gap: 10px;
+	overflow: hidden;
+	align-items: center;
+}
+
+.weight-400 {
+	font-weight: 400;
+}
+.weight-600 {
+	font-weight: 600;
+}
+.parrafo {
+	margin-bottom: 30px;
+}
+
+.header {
+	height: 500px;
+}
+
+.img-hero {
+	width: 100%;
+	height: auto;
+	grid-column: 7/13;
+}
+
+.img {
+	width: 80%;
+	margin-left: 80px;
+	max-width: 287px;
+}
+
+.textos-hero {
+	grid-column: 1/7;
+	padding-right: 20px;
+	p {
+		text-align: #{$text};
+	}
+}
+
+.cta {
+	width: 130px;
+	background: #212529;
+	color: $color_2;
+	display: inline-block;
+	text-align: center;
+	padding: 10px 0;
+	text-decoration: none;
+}
+
+.services {
+	height: 375px;
+	background: linear-gradient(180deg, #ffffff 50%, #212529 50%);
+}
+
+.items {
+	grid-column: #{$grid}; 
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 100%;
+}
+
+.item {
+	width: 30%;
+	background: #fff;
+	box-shadow: 0 0 6px rgba(0, 0, 0 );
+	overflow: hidden;
+	height: 220px;
+	padding: 20px 10px;
+	text-align: center;
+}
+
+[class^="far fa"] {
+		font-size: 50px;
+		color: $color_3;
+		text-align: center;
+	}
+
+.title-services {
+	margin: 20px 0;
+}
+
+.about-us {
+	background: #c0c0bf;
+	color: $color_1;
+	height: auto;
+	padding-bottom: 50px;
+}
+
+.textos-about-us {
+	grid-column: #{$grid};
+	text-align: center;
+	.parrafo {
+		margin-bottom: 10px;
+		color: $color_1;
+	}
+}
+
+.mission {
+	padding: 90px 0;
+}
+
+.textos-mission {
+	grid-column: 7/13;
+	grid-row: #{$grid};
+	margin-bottom: 20px;
+}
+
+.img-mission {
+	grid-column: 2/7;
+	grid-row: #{$grid};
+}

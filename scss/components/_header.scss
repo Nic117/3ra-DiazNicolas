@@ -1,0 +1,29 @@
+@import './colors';
+@import './variables'; 
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: #{$border};
+	margin: 0;
+	padding: 0;
+	box-sizing: #{$border};
+}
+
+body {
+	font-family: $font-family_1;
+	font-family: $font-family_2;
+}
+.header1 {
+	height: 600px;
+	background-image: url('../images/btc3.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.carousel-item {
+	margin-top: 20%;
+	h1 {
+		color: $color_1;
+	}
+}
+
