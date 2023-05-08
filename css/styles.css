@@ -4,6 +4,11 @@
   align-items: center;
 }
 
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   --strong-cyan: hsl(28, 79%, 60%);
   --light-blue: hsl(26, 100%, 69%);
@@ -113,15 +118,16 @@
   align-items: center;
 }
 
-::before {
+*, ::after, ::before {
   margin: 0;
   padding: 0;
+}
+
+::before {
   box-sizing: border-box;
 }
 
 ::after {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -227,6 +233,11 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
 }
 
 .grid {
@@ -359,6 +370,11 @@ label {
   align-items: center;
 }
 
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+}
+
 footer {
   background: #212529;
   padding: 86px 0;
@@ -408,6 +424,11 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
 }
 
 .contenedor {
@@ -476,12 +497,13 @@ footer {
   align-items: center;
 }
 
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+}
+
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -508,6 +530,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+::before, ::after, * {
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -631,6 +658,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+::before, ::after, * {
+  margin: 0;
+  padding: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

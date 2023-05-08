@@ -3,13 +3,11 @@
 
 
 ::before {
-	margin: 0;
-	padding: 0;
+	@extend %margin;
 	box-sizing: #{$border};
 }
 ::after {
-	margin: 0;
-	padding: 0;
+	@extend %margin;
 	box-sizing: #{$border};
 }
 #registro {

@@ -2,11 +2,9 @@
 @import './variables'; 
 
 *{
-	margin: 0;
-	padding: 0;
+	
 	box-sizing: #{$border};
-	margin: 0;
-	padding: 0;
+	@extend %margin;
 	box-sizing: #{$border};
 }
 
